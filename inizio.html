@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <style>
-       button{
+        button{
            background-color: cornflowerblue;
            color: white;
            width: 200px;
            height: 100px;
            border-radius: 10px;
            font-size: 30px;
+  
         }
         body{
             background-color: lightgreen;
@@ -16,25 +17,26 @@
         }
 
     </style>
-
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
 <title>GIOCO</title>
+
 </head>
 
 <body>
+
 <h1>WELCOME ON BOARD!</h1>
 <h4>EDITOR: crate some stories</h4>
 <h4>PLAYER: Go, have fun!</h4>
 <button id="edit" type="button" onclick="edit()">EDITOR</button>
-<button id="player" type="button" onclick="play()">PLAYER</button>
+<button id="play" type="button" onclick="play()">PLAYER</button>
 
 <script>
     function edit() {
-        //open("editor.html"); apre il file con nuova pagina
+        //open("editor.html");
         location.href='editor.html';
     }
     function play() {
-        ocation.href='player.html';
+        location.href='qrcode.html';
     }
 </script>
 
