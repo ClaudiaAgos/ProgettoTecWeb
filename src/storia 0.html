@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Storia 0</title>
+</head>
+<body>
+<h1>BENVENUTO GIOCATORE!</h1>
+<h2>Sei pronto a giocare?</h2>
+<h4>il tuo nome utente è: <div  id="name"> </div> </h4>
+
+<p>ok <div id="a"></div> iniziamo</p>
+
+
+
+
+
+<script>
+    function nomerandom(iLen) {
+            var sRnd = '';
+            var sChrs = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+            for (var i = 0; i < iLen; i++) {
+                var randomPoz = Math.floor(Math.random() * sChrs.length);
+                sRnd += sChrs.substring(randomPoz, randomPoz + 1);
+            }
+            return sRnd;
+        }
+
+
+    var stringarandom = nomerandom(5);
+    document.getElementById("name").innerHTML = stringarandom;
+    document.getElementById("a").innerHTML = stringarandom;
+</script>
+
+</body>
+</html>
