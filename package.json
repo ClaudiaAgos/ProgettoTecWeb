@@ -1,43 +1,17 @@
 {
-  "name": "tweet-tracker",
-  "version": "1.0.0",
+  "name": "progettotecweb",
+  "version": "0.0.0",
   "private": true,
-  "description": "A sample admin dashboard based on black dashboard UI template",
-  "author": "cristian.jora <joracristi@gmail.com>",
   "scripts": {
-    "serve": "vue-cli-service serve --open",
-    "build": "vue-cli-service build",
-    "e2e": "node test/e2e/runner.js",
-    "lint": "vue-cli-service lint",
-    "dev": "vue-cli-service serve --open",
-    "lint-fix": "vue-cli-service lint --fix",
-    "nodeServer": "node server/index.js"
+    "start": "node ./bin/www"
   },
   "dependencies": {
-    "chart.js": "^2.9.3",
-    "cors": "^2.8.5",
-    "morgan": "^1.10.0",
-    "register-service-worker": "^1.7.1",
-    "twit": "^2.2.11",
-    "vue": "^2.6.11",
-    "vue-chartjs": "^3.5.0",
-    "vue-router": "^3.4.9",
-    "vue-router-prefetch": "^1.6.0",
-    "vue-share-buttons": "^1.1.0",
-    "vue2-transitions": "^0.3.0"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.5.9",
-    "@vue/cli-plugin-eslint": "^4.5.9",
-    "@vue/cli-plugin-pwa": "^4.5.9",
-    "@vue/cli-service": "^4.5.9",
-    "node-sass": "^4.14.1",
-    "sass-loader": "^8.0.2",
-    "vue-template-compiler": "^2.6.11"
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 11"
-  ]
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "^4.16.4",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "qrcode": "^1.4.4"
+  }
 }
