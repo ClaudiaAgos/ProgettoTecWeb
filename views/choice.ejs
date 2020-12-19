@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+
+<h1>Crea la tua squadra</h1>
+
+<form action="/register" method="post" autocomplete="off">
+    <p>Seleziona la tua fascia di età:</p>
+    <input type="radio" id="710" name="year" value="710">
+    <label for="male">7-10</label><br>
+    <input type="radio" id="1114" name="year" value="1114">
+    <label for="female">11-14</label><br>
+    <input type="radio" id="1518" name="year" value="1518">
+    <label for="female">15-18</label><br>
+
+    <br>
+
+    <p>Seleziona il numero di partecipanti</p>
+    <input type="radio" id="individuale" name="tipo" value="individual">
+    <label for="male">Individuale</label><br>
+    <input type="radio" id="gruppo" name="tipo" value="group">
+    <label for="female">Gruppo (2-5 persone) </label><br>
+    <input type="radio" id="classe" name="tipo" value="classe">
+    <label for="female">classe (15-20 persone)</label><br>
+
+    <input type="submit" name="submit" value="Register">
+</form>
+
+</body>
+</html>
