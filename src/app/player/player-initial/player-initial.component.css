@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+.example-section {
+  margin: 12px 0;
+}
+
+.example-margin {
+  margin: 0 12px;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 4px;
+}
+
+h1{
+  margin-top: 10px;
+  text-align: center;
+}
+
+.mat-radio-button{
+  display: inline;
+  padding-top: 10px;
+  margin-right: 40px;
+}
+
+div{
+  text-align: center;
+}
+
+
+
+mat-toolbar{
+  background-color: darkblue;
+}
+.span{
+  margin: auto;
+  color: white;
+  font-family: 'Langar', 'cursive';
+  font-size: xx-large;
+}

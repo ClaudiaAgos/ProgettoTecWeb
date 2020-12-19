@@ -13,13 +13,19 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { EditorComponent } from './editor/editor.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PlayerInitialComponent} from "./player/player-initial/player-initial.component";
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {FormsModule} from "@angular/forms";
+import {MatRadioModule} from "@angular/material/radio";
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     PlayerComponent,
-    EditorComponent
+    EditorComponent,
+    PlayerInitialComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +34,11 @@ import { EditorComponent } from './editor/editor.component';
     MatInputModule,
     MatButtonModule,
     MatCardModule,
-    MatExpansionModule
+    MatExpansionModule,
+    BrowserAnimationsModule,
+    MatCheckboxModule,
+    FormsModule,
+    MatRadioModule
 
   ],
   providers: [],
