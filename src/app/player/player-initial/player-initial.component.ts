@@ -12,4 +12,14 @@ import {Component} from "@angular/core";
 
 
 
-export class PlayerInitialComponent {}
+export class PlayerInitialComponent {
+  enteredAge = '';
+  enteredGroup = '';
+
+
+  Checked(){
+
+  }
+
+
+}
