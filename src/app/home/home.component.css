@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+
+body{
+  background-color: cornflowerblue;
+}
+button{
+  margin-left: 10px;
+}
+
+mat-toolbar{
+  background-color: darkblue;
+}
+.span{
+  margin: auto;
+  color: white;
+  font-family: 'Langar', 'cursive';
+  font-size: xx-large;
+}
+
+mat-card{
+  background-color: darkblue;
+  border-radius: 0;
+  width: 100%;
+  text-align: center;
+
+}

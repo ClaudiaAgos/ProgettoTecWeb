@@ -1,0 +1,27 @@
+<body>
+
+<mat-toolbar>
+  <mat-toolbar-row>
+    <span class="span">Crea la tua squadra</span>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<h1>Seleziona la tua fascia di età</h1>
+
+<div class="select" >
+
+    <input  type="radio" value="7-10" name="radiobutton" (change)="setAge()" [(ngModel)]="enteredAge">7-10
+    <input  type="radio" value="11-14" name="radiobutton" (change)="setAge()" [(ngModel)]="enteredAge">11-14
+    <input  type="radio" value="15-18" name="radiobutton"  (change)="setAge()" [(ngModel)]="enteredAge">15-17
+
+  <br>
+    <input  type="radio" value="individual" name="radiobutton2" (change)="setPeople()" [(ngModel)]="enteredPeople">Individuale
+    <input  type="radio" value="classe" name="radiobutton2"  (change)="setPeople()" [(ngModel)]="enteredPeople">Classe
+    <input  type="radio" value="gruppo" name="radiobutton2" (change)="setPeople()" [(ngModel)]="enteredPeople">Gruppo
+</div>
+
+<input type="submit" name="submit" value="submit" (click)="validation()" >
+
+
+
+</body>
