@@ -17,13 +17,6 @@ h1{
   text-align: center;
 }
 
-.mat-radio-button{
-  display: inline-block;
-  padding-top: 10px;
-  margin-right: 40px;
-  align-content: center;
-  text-align: center;
-}
 
 div{
   text-align: center;
@@ -40,11 +33,9 @@ mat-toolbar{
   font-size: xx-large;
 }
 
-button{
+body{
+  align-content: center;
   text-align: center;
 }
 
 
-.buttonInit{
-  align-content: center;
-}

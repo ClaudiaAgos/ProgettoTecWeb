@@ -8,25 +8,20 @@
 
 <h1>Seleziona la tua fascia di età</h1>
 
-<div class="select">
-  <mat-radio-group >
-    <mat-radio-button value="1">7-10</mat-radio-button>
-    <mat-radio-button value="2">11-14</mat-radio-button>
-    <mat-radio-button value="2">15-17</mat-radio-button>
-  </mat-radio-group>
+<div class="select" >
+
+    <input  type="radio" value="7-10" name="radiobutton" (change)="setAge()" [(ngModel)]="enteredAge">7-10
+    <input  type="radio" value="11-14" name="radiobutton" (change)="setAge()" [(ngModel)]="enteredAge">11-14
+    <input  type="radio" value="15-18" name="radiobutton"  (change)="setAge()" [(ngModel)]="enteredAge">15-17
 
   <br>
-  <h1>Seleziona il numero di partecipanti</h1>
-  <mat-radio-group>
-    <mat-radio-button value="1">Individual</mat-radio-button>
-    <mat-radio-button value="2">Gruppo (2-5 persone)</mat-radio-button>
-    <mat-radio-button value="2">Classe (15-20 persone)</mat-radio-button>
-  </mat-radio-group>
+    <input  type="radio" value="individual" name="radiobutton2" (change)="setPeople()" [(ngModel)]="enteredPeople">Individuale
+    <input  type="radio" value="classe" name="radiobutton2"  (change)="setPeople()" [(ngModel)]="enteredPeople">Classe
+    <input  type="radio" value="gruppo" name="radiobutton2" (change)="setPeople()" [(ngModel)]="enteredPeople">Gruppo
+</div>
 
-</div>
-<br>
-<div class="buttonInit">
-<button id="buttonInit" mat-raised-button color="primary" routerLink="/">Inizia</button>
-</div>
+<input type="submit" name="submit" value="submit" (click)="validation()" >
+
+
 
 </body>
