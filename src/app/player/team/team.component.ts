@@ -1,5 +1,5 @@
-import { Component} from "@angular/core";
-import { Router } from "@angular/router";
+import { Component} from '@angular/core';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -21,7 +21,7 @@ export class TeamComponent {
   newPeople = '';
 
 
-  constructor(private router:Router){}
+  constructor(private router: Router){}
 
   setAge(){
     this.newAge = this.enteredAge;
@@ -33,8 +33,8 @@ export class TeamComponent {
 
 
   validation() {
-    if(this.newAge.valueOf() == '11-14' && this.newPeople.valueOf() == 'individual'){
-      console.log("Media - individuale");
+    if(this.newAge.valueOf() === '11-14' && this.newPeople.valueOf() == 'individual'){
+      console.log('Media - individuale');
       this.router.navigateByUrl('/storyMI');
     }
     if(this.newAge.valueOf() == '11-14' && this.newPeople.valueOf() == 'classe'){
@@ -46,6 +46,18 @@ export class TeamComponent {
       this.router.navigateByUrl('/storyMG');
     }
 
+    if(this.newAge.valueOf() === '15-18' && this.newPeople.valueOf() === 'individual'){
+      console.log('Media - individuale');
+      this.router.navigateByUrl('/storyMI');
+    }
+    if(this.newAge.valueOf() === '15-18' && this.newPeople.valueOf() === 'classe'){
+      console.log('Media - classe');
+      this.router.navigateByUrl('/storyMC');
+    }
+    if(this.newAge.valueOf() === '11-14' && this.newPeople.valueOf() === 'gruppo'){
+      console.log('Media - gruppo');
+      this.router.navigateByUrl('/storyMG');
+    }
 
   }
 }
